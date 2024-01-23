@@ -1,0 +1,162 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 100lvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Replace the incomplete linear gradient value with a valid background property */
+    background: linear-gradient(to right, #c4ff40, #dfffaa);
+    margin: 5;
+}
+
+.container {
+    position: relative;
+    max-width: 800px;
+    width: 80%;
+    padding: 40px;
+    border-radius: 12px;
+    margin: 30px auto;
+    background-color: green;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.container header {
+    font-size: 28px;
+    font-weight: 700;
+    color: black;
+    margin-bottom: 30px;
+    background-color:#c4ff40;
+    text-align: center;
+    border-radius:25px;
+}
+
+.container form {
+    position: relative;
+    min-height: 600px;
+    background-color: white; /* Light gray background */
+    border-radius: 12px;
+    padding: 30px;
+}
+.container form .fields {
+    display: flex;
+    flex-direction: column;
+}
+
+.container form .fields label {
+    margin-bottom: 12px;
+    font-weight: 500;
+    color: #666; /* Light gray color for labels */
+}
+
+.container form .fields input {
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    width: calc(100% - 24px); /* Adjusted width for centering */
+}
+
+.container form .fields input[type="date"] {
+    padding: 8px;
+}
+
+.container form .fields input[type="submit"] {
+    background-color: green;
+    color: white;
+    cursor: pointer;
+    padding: 14px;
+    border: none;
+    border-radius: 6px;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 30px;
+}
+
+.container form .fields input[type="submit"]:hover {
+    background-color: darkgreen;
+}
+
+.container .details.personal .title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #666; /* Light gray color for title */
+}
+.container .details.personal .title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #666; /* Light gray color for title */
+}
+/* Add your existing CSS styles here */
+
+.container form .fields label {
+    margin-bottom: 12px;
+    font-weight: 500;
+    color: #666; /* Light gray color for labels */
+}
+
+.container form .fields input {
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    width: calc(100% - 24px); /* Adjusted width for centering */
+}
+
+.container form .fields input[type="password"] {
+    /* Add specific styles for password fields if needed */
+}
+
+.container form .fields input[type="submit"] {
+    background-color: green;
+    color: white;
+    cursor: pointer;
+    padding: 14px;
+    border: none;
+    border-radius: 6px;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 30px;
+}
+
+.container form .fields input[type="submit"]:hover {
+    background-color: darkgreen;
+}
+
+.container .details.personal .title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #666; /* Light gray color for title */
+}
+ .container form .fields label[for="male"],
+.container form .fields label[for="female"] {
+    display: block;
+    margin-top: -40px;
+}
+ .container form .fields label[for="Sex"]{
+     margin-top: -10px
+    
+ }
+ .container p[for="Collection"] {
+ background-color: #dfffaa;
+ border:5px;
+  display :flex;
+  font-size:15px;
+  border-radius:10px;
+ }
+ .container h3[for="CollectionUse"]{
+     background-color:#dfffd5;
+     border:5px;
+     border-radius:10px;
+     padding:5px;
+     
+ }
+ 

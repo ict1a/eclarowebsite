@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="h.css">
+
+    <!-- Link to Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap">
+
+    <!-- iconsout css -->
+    <link rel="stylesheet" href="https://unicons.iconsout.com/release/v4.0.0/css/line.css">
+
+    <title>Enrollment Form</title>
+</head>
+<body style="background-color: green">
+    <div class="container" style="background-color:white">
+        <header><span style="font-size: 28px; font-weight: 700;">Enrollment Form</span></header>
+        <form onsubmit="return validateEnrollmentForm()">
+            
+            <!-- Program -->
+            <label for="program" style="font-size:17px">Strand/Track:</label>
+            <select id="program" name="Program/Strand" required>
+                 <option value="">Select your strand</option>
+                <option value="ICT">Information Communication and Technology</option>
+                <option value="STEM">Science,Technology, Engineering and Mathematics</option>
+                <option value="H.E">Home Economics</option>
+                <option value="ABM">Accountancy,Business and Management</option>
+                <option value="HUMSS">Humanities and Social Science</option>
+                <option value="GAS">General Academic Strand</option>
+            </select>
+                
+            <br> <!-- Added line break for spacing -->
+
+            <!-- Preferred Schedule-->
+            <label for="Schedule"><b></b>Preferred Schedule:</label>
+            <input type="radio" name="Schedule" value="Am" required> AM
+            <input type="radio" name="Schedule" value="Pm" required> PM<br><br>
+
+            <!-- LRN -->
+            <label for="LRN"><b></b>LRN:</label>
+            <input type="number" id="LRN" name="LRN" placeholder="Enter student ID" required><br><br>
+
+            <!-- Voucher -->
+            <label for="Voucher"><b></b>Voucher:</label>
+            <select id="Voucher" name="Voucher"" required>
+                <option value=""> </option>
+                <option value="QVR">Qualified Voucher Recipient</option>
+                <option value="Non-QVR">Non-Qualified Voucher Recipient</option>
+            </select><br><br>
+            
+            <!-- Adviser, Section, Last School Attended -->
+            <label><b></b>Name of Adviser Last Year</label>
+            <input type="text" id="AdviserName" placeholder="Enter your adviser's name" required><br><br>
+            
+            <label><b></b>Section In Previous School Year</label>
+            <input type="text" id="SectionSy" placeholder="Enter your section last year" required><br><br>
+            
+            <label><b></b>Name of Last School Attended</label>
+            <input type="text" id="SchoolAttended" placeholder="Enter your last school attended" required><br><br>
+                         
+            <!-- Modality of Learning -->
+            <label><b></b>Modality of Learning</label>
+            <select id="Learning" name="Learning" required>
+                 <option value="">Select your modality</option>
+                <option value="Online">Online</option>
+                <option value="Blended">Blended</option>
+                <option value="Modular">Modular</option>
+            </select><br><br>
+               
+            <!-- Admission -->
+            <label><b></b>Admission</label>
+            <select id="Admission" name="Admission" required>
+                <option value="">Select your admission type</option>
+                <option value="Old student">Old Student</option>
+                <option value="New Student">New Student</option>
+            </select><br><br>
+            
+            <input type="submit" value="Submit" class="submit-button">
+        </form>
+
+        <!-- Link to your script.js file -->
+        <script src="script.js"></script>
+    </div>
+</body>
+</html>

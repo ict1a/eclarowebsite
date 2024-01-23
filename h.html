@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="h.css">
+
+    <!-- Link to Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap">
+
+    <!-- iconsout css -->
+    <link rel="stylesheet" href="https://unicons.iconsout.com/release/v4.0.0/css/line.css">
+
+    <title>Registration and Enrollment Form</title>
+</head>
+
+<body>
+    <div class="container" style="background-color:white">
+        <header><span style="font-size: 28px; font-weight: 700;">Registration Form</span></header>
+
+        <div class="details personal">
+            <h3 for="CollectionUse">Consent for Collection and Use of Personal Data</h3>
+            <p for="Collection">
+                This information collected on this form will be held by Eclaro Academy in the Electronic Format and will be processed in accordance with RA 10173 or Data Privacy Act of 2012. By continuing through this process, you understand and give consent to your personal information.
+            </p>
+            <input type="radio" name="consent" value="IAgree" required> Yes
+            <input type="radio" name="consent" value="IDont" required> No
+        </div>
+
+        <span class="title">Personal Details</span>
+        <form action="registraion.php" onsubmit="return validateRegistrationForm()" method="post">
+            <div class="fields">
+                <div class="input-field">
+                    <label for="firstName">First Name</label>
+                    <input type="text" id="firstName" placeholder="Enter your first name" required>
+
+                    <label for="middleName">Middle Name</label>
+                    <input type="text" id="middleName" placeholder="Enter your middle name" required>
+
+                    <label for="lastName">Last Name</label>
+                    <input type="text" id="lastName" placeholder="Enter your last name" required>
+
+                    <label for="age">Age</label>
+                    <input type="number" id="age" placeholder="Enter your age" required>
+
+                    <label for="dob">Date of Birth</label>
+                    <input type="date" id="dob" required>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Enter your email" required>
+
+                    <label for="gradeLevel">Grade Level</label>
+                    <input type="number" id="gradeLevel" placeholder="Enter your grade level" required>
+
+                    <label for="guardianName">Name of Guardian</label>
+                    <input type="text" id="guardianName" placeholder="Enter your guardian's name" required>
+
+                    <label for="guardianContact">Contact Number of Guardian</label>
+                    <input type="tel" id="guardianContact" placeholder="Enter your guardian's number" required>
+
+                    <label for="contactNumber">Contact Number</label>
+                    <input type="tel" id="contactNumber" placeholder="Enter your contact number" required>
+
+                    <label for="address">Address</label>
+                    <input type="text" id="address" placeholder="Enter your address" required>
+
+                    <label for="facebookName">Facebook Name</label>
+                    <input type="text" id="facebookName" placeholder="Enter your Facebook name" required>
+
+                    <!-- Repositioned Password Fields -->
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+                    <label for="repeatPassword">Repeat Password</label>
+                    <input type="password" id="repeatPassword" name="repeatPassword" placeholder="Repeat your password" required>
+
+                    <label for="religion">Religion</label>
+                    <input type="text" id="religion" placeholder="Enter your religion" required>
+
+                    <label for="sex">Sex</label>
+                    <input type="radio" id="male" name="sex" value="Male" required>
+                    <label for="male">Male</label>
+
+                    <input type="radio" id="female" name="sex" value="Female" required>
+                    <label for="female">Female</label>
+                </div>
+            </div>
+            <input type="submit" value="Next" class="next-button">
+        </form>
+
+        <!-- Link to the separate JavaScript file -->
+        <script src="script.js"></script>
+    </div>
+</body>
+</html>
