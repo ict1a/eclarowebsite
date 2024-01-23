@@ -115,7 +115,7 @@ function redirectToSignIn(){
     // redirect to login page
     window.location.href = 'login.html'
 }
-function redirecttoUserInterface(){
+function redirecttoHome(){
     //redirect to home
-    window.location.href ='UserInterface.html'
+    window.location.href ='home.html'
     }
