@@ -1,0 +1,64 @@
+*{
+    margin: 0px; 
+    padding: 0px;
+    box-sizing: border-box;
+    }
+    P {
+        display: inline     ;
+    }
+    ul {
+        position: fixed;
+        top: 0;
+        right: 0%;
+    }
+    
+    nav{
+        width:100%;
+        height: 75px;
+        line-height: 75px;
+        padding: 0px 100px;
+        position: fixed;
+        background-image: linear-gradient( #61cb1f,#19129a); 
+        
+        }
+    
+        nav .logo p{
+            font-size: 30px;            
+            font-weight: bold;
+            font: left;
+            color: rgb(204, 37, 216);
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            cursor: pointer;
+    
+        }
+        nav ul {
+            float: right;
+        }
+            nav li{
+                display: inline-block;
+                list-style: none;
+            }
+    
+        nav li a{
+            
+            font-size: 18px;
+            text-transform: uppercase;
+            padding: 50px;
+            color:rgb(252, 252, 252);
+            text-decoration: none;
+    
+        }
+        nav li a:hover{
+            color: rgb(197, 179, 179);
+            transition: all 0.4s ease 0s;
+            
+        }
+        body{
+            background-image: url('./eclarologo.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+    
